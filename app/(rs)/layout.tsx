@@ -1,9 +1,11 @@
+import Header from "@/components/Header";
 import React from "react";
 
 const RSLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="mx-auto w-full">
-      <div>{children}</div>
+    <div className="mx-auto w-full max-w-7xl">
+      <Header />
+      <div className="px-4 py-2">{children}</div>
     </div>
   );
 };
